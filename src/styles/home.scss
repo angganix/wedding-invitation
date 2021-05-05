@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+body {
+  background: #f9f7cf;
+}
+
+#home-page {
+  h4,
+  h2 {
+    font-family: "Dancing Script";
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+}
+
+.bordered-quote {
+  border-left: 4px solid #444;
+  padding-left: 1em;
+}
+
+.home-page-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 800px;
+  object-fit: cover;
+  z-index: -2;
+}

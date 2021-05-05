@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+#home-screen-page {
+    h2, h4 {
+        font-family: 'Dancing Script';
+        font-weight: 600;
+    }
+
+    .home-screen-container {
+        min-width: 300px;
+        padding: 2em 12px;
+        border: 2px dotted #222;
+    }
+}

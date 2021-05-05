@@ -1,0 +1,51 @@
+@import "~bootstrap";
+
+@font-face {
+  font-family: "Caviar Dreams";
+  src: url("./fonts/CaviarDreams.ttf");
+  font-style: normal;
+}
+
+body {
+  font-family: "Caviar Dreams";
+  font-weight: 600;
+}
+
+/* Music button */
+.music-button {
+  position: fixed;
+  z-index: 2001;
+  border-radius: 100px !important;
+  bottom: 65px;
+  left: 2px;
+}
+
+@mixin frameBorderTop {
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+@mixin frameBorderBottom {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+}
+
+.frame-border-top-left {
+  @include frameBorderTop();
+  transform: rotate(180deg);
+  left: 0;
+}
+
+.frame-border-top-right {
+  @include frameBorderTop();
+  transform: rotate(-90deg);
+  right: 2px;
+}
+
+.frame-border-bottom-right {
+  @include frameBorderBottom();
+  transform: rotate(-90deg);
+  right: 2px;
+}

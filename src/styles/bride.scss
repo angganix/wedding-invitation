@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+#bride-page {
+  h4,
+  h2 {
+    font-family: "Dancing Script";
+    font-weight: 600;
+  }
+
+  strong {
+    font-family: "Dancing Script";
+    font-weight: 900;
+  }
+
+  .bride-carousel-image {
+    max-height: 220px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .bride-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 15px;
+  }
+
+  .bride-image-outer {
+    position: absolute;
+    top: 0;
+    animation: linear;
+    animation-name: rotateCircleBrideOuter;
+    animation-duration: 220s;
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+    margin: -25px;
+  }
+
+  .first-bride-story {
+    object-position: center;
+  }
+}
+
+@keyframes rotateCircleBrideOuter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
